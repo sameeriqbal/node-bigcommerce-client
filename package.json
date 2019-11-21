@@ -1,0 +1,80 @@
+{
+  "_args": [
+    [
+      "node-bigcommerce@4.0.1",
+      "D:\\Repos\\baby-care-ksa-backend"
+    ]
+  ],
+  "_from": "node-bigcommerce@4.0.1",
+  "_id": "node-bigcommerce@4.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-X49tA9UXad/cMF7NPX5HPaaS6ATyjOQ0xsvqJ+qytJqUpkHt73Rv58Jx8FvpcsCGWdJ5s/lLRNECdaa1N8uplg==",
+  "_location": "/node-bigcommerce",
+  "_phantomChildren": {
+    "ms": "2.1.2"
+  },
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "node-bigcommerce@4.0.1",
+    "name": "node-bigcommerce",
+    "escapedName": "node-bigcommerce",
+    "rawSpec": "4.0.1",
+    "saveSpec": null,
+    "fetchSpec": "4.0.1"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/node-bigcommerce/-/node-bigcommerce-4.0.1.tgz",
+  "_spec": "4.0.1",
+  "_where": "D:\\Repos\\baby-care-ksa-backend",
+  "author": {
+    "name": "Rick Craig",
+    "email": "rick@conversio.com",
+    "url": "https://conversio.com"
+  },
+  "bugs": {
+    "url": "https://github.com/getconversio/node-bigcommerce/issues"
+  },
+  "dependencies": {
+    "debug": "^3.1.0"
+  },
+  "description": "A node module for authentication and use with the BigCommerce API",
+  "devDependencies": {
+    "agentkeepalive": "^3.1.0",
+    "chai": "^3.5.0",
+    "eslint": "^4.9.0",
+    "eslint-config-conversio": "^1.0.4",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5",
+    "nock": "^10.0.1",
+    "sinon": "^1.17.3",
+    "supervisor": "^0.12.0"
+  },
+  "homepage": "https://github.com/getconversio/node-bigcommerce",
+  "keywords": [
+    "bigcommerce",
+    "oauth2.0",
+    "oauth",
+    "conversio",
+    "api",
+    "ecommerce",
+    "node",
+    "npm"
+  ],
+  "license": "MIT",
+  "main": "./lib/bigcommerce",
+  "name": "node-bigcommerce",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/getconversio/node-bigcommerce.git"
+  },
+  "scripts": {
+    "autotest": "supervisor -q -n exit -x node_modules/.bin/_mocha --",
+    "exectests": "istanbul cover ./node_modules/.bin/_mocha",
+    "lint": "eslint lib test",
+    "test": "npm run exectests && npm run lint"
+  },
+  "version": "4.0.1"
+}
